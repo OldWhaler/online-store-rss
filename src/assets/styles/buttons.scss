@@ -1,0 +1,16 @@
+.button {
+  flex: 1 1 auto;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: $mainColor;
+  color: #fff;
+  font-weight: 700;
+  
+  &:active{
+      background-color: $darkColor;
+  }
+
+  &_colored {
+    background-color: rgb(235, 45, 12);
+  }
+}

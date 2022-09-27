@@ -1,0 +1,67 @@
+@media screen and (max-width: 965px) {
+  .header{
+
+    &__info{
+      column-gap: 10px;
+    }
+    &__headling {
+      font-size: 20px;
+    }
+    &__search-input{
+      padding: 6px 14px;
+      font-size: 16px;
+    }
+    &__search-clear{
+      top: 6px;
+    }
+
+    &__basket{
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+
+  .filters {
+    &__container {
+      padding: 10px;
+    }
+
+    &__headling {
+      font-size: 18px;
+    }
+  }
+
+  .filter {
+    padding: 10px 0;
+
+    &__reset-button,
+    &__title,
+    &__value {
+      font-size: 15px;
+    }
+
+    &__label {
+      font-size: 13px;
+
+      &::before {
+        top: -1px;
+      }
+
+      &.checked {
+        &::after {
+          top: 2px;
+        }
+      }
+    }
+  }
+
+  .product-list{
+    justify-content: space-around;
+  }
+
+  .product {
+    flex: 0 0 45%;
+    padding: 15px;
+  }
+}

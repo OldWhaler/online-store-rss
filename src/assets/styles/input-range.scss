@@ -1,0 +1,49 @@
+input[type="range"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+  -webkit-appearance: none;
+  height: 5px;
+}
+input[type="range"]::-moz-range-track{
+  -moz-appearance: none;
+  height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 1.4em;
+  width: 1.4em;
+  background-color: $darkColor;
+  border: 3px solid $mainColor;
+  cursor: pointer;
+  margin-top: -7px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb{
+  -webkit-appearance: none;
+  height: 1.4em;
+  width: 1.4em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $darkColor;
+  border: 3px solid $mainColor;
+  pointer-events: auto;
+}
+
+input[type="range"]:active::-webkit-slider-thumb{
+  background-color: $darkColor;
+  border: 4px solid $mainColor;
+}
